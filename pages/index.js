@@ -9,8 +9,21 @@ export default function Home() {
         <title>Miss Lim Sharing: Find Your Lovely Airbnb</title>
         <meta
           name="description"
-          content="Miss Lim Sharing – Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Experience the best homestay with modern amenities and great locations."
+          content="Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Homestay with modern amenities and great locations."
         />
+        {/*Add the icon later*/}
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",  // Fixed type from "WenSite" to "WebSite"
+            "name": "Miss Lim Sharing",
+            "url": "https://misslimsharing.com",
+            "description": "Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
+            "image": "https://misslimsharing.com/og-image.jpg"
+          })}
+        </script>
 
         {/* Optional: Add a title for brand + region */}
         <meta property="og:site_name" content="MissLimSharing Malaysia" />
