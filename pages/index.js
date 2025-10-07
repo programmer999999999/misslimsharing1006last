@@ -6,21 +6,21 @@ export default function Home() {
     <>
       <Head>
         {/* This is what Google uses */}
-        <title>Miss Lim Sharing: Find Your Lovely Airbnb</title>
+        <title>cMiss Lim Sharing: Find Your Lovely Airbnb</title>
         <meta
           name="description"
-          content="Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Homestay with modern amenities and great locations."
+          content="aComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Homestay with modern amenities and great locations."
         />
-        {/*Add the icon later*/}
+        <link rel="icon" href="/og-image.jpg" type="image/jpeg"></link>
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebSite",  // Fixed type from "WenSite" to "WebSite"
+            "@type": "WebSite",
             "name": "Miss Lim Sharing",
             "url": "https://misslimsharing.com",
-            "description": "Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
+            "description": "bComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
             "image": "https://misslimsharing.com/og-image.jpg"
           })}
         </script>
