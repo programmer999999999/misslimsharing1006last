@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         {/* This is what Google uses */}
-        <title>cMiss Lim Sharing: Find Your Lovely Airbnb</title>
+        <title>ccMiss Lim Sharing: Find Your Lovely Airbnb</title>
         <meta
           name="description"
           content="aComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Homestay with modern amenities and great locations."
@@ -65,4 +65,5 @@ export default function Home() {
     </>
   );
 }
+
 
