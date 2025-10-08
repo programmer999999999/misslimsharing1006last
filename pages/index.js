@@ -27,8 +27,8 @@ export default function Home() {
 
         {/* Optional: Add a title for brand + region */}
         <meta property="og:site_name" content="MissLimSharing Malaysia" />
-        <meta property="og:title" content="Miss Lim Sharing: Find Your Lovely Airbnb" />
-        <meta property="og:description" content="Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Experience the best homestay with modern amenities and great locations." />
+        <meta property="og:title" content="ddMiss Lim Sharing: Find Your Lovely Airbnb" />
+        <meta property="og:description" content="xxComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Experience the best homestay with modern amenities and great locations." />
         <meta property="og:url" content="https://misslimsharing.com" />
         <meta property="og:image" content="https://misslimsharing.com/og-image.jpg" />
       </Head>
@@ -65,3 +65,4 @@ export default function Home() {
     </>
   );
 }
+
