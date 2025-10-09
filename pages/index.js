@@ -6,10 +6,10 @@ export default function Home() {
     <>
       <Head>
         {/* This is what Google uses */}
-        <title>ccMiss Lim Sharing: Find Your Lovely Airbnb</title>
+        <title>vb1Miss Lim Sharing: Find Your Lovely Airbnb</title>
         <meta
           name="description"
-          content="aComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Homestay with modern amenities and great locations."
+          content="vb1Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia."
         />
         <link rel="icon" href="/og-image.jpg" type="image/jpeg"></link>
 
@@ -20,15 +20,15 @@ export default function Home() {
             "@type": "WebSite",
             "name": "Miss Lim Sharing",
             "url": "https://misslimsharing.com",
-            "description": "bComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
+            "description": "vb2Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
             "image": "https://misslimsharing.com/og-image.jpg"
           })}
         </script>
 
         {/* Optional: Add a title for brand + region */}
         <meta property="og:site_name" content="MissLimSharing Malaysia" />
-        <meta property="og:title" content="ddMiss Lim Sharing: Find Your Lovely Airbnb" />
-        <meta property="og:description" content="xxComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia. Experience the best homestay with modern amenities and great locations." />
+        <meta property="og:title" content="vb3Miss Lim Sharing: Find Your Lovely Airbnb" />
+        <meta property="og:description" content="vb3Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia." />
         <meta property="og:url" content="https://misslimsharing.com" />
         <meta property="og:image" content="https://misslimsharing.com/og-image.jpg" />
       </Head>
@@ -65,5 +65,3 @@ export default function Home() {
     </>
   );
 }
-
-
