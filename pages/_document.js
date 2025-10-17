@@ -4,49 +4,38 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://misslimsharing.com/" />
-        <meta property="og:title" content="zaMiss Lim Sharing: Find Your Lovely Airbnb" />
-        <meta property="og:description" content="zbComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia." />
-        <meta property="og:image" content="https://misslimsharing.com/og-image.jpg" />
+        {/* Global meta tags */}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://misslimsharing.com/" />
-        <meta property="twitter:title" content="arMiss Lim Sharing: Find Your Lovely Airbnb" />
-        <meta property="twitter:description" content="asComfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia." />
-        <meta property="twitter:image" content="https://misslimsharing.com/og-image.jpg" />
-        
-        {/* JSON-LD Structured Data */}
+        {/* Global Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Miss Lim Sharing" />
+
+        {/* Global Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@misslimsharing" />
+
+        {/* LodgingBusiness JSON-LD (site-wide) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LodgingBusiness",
-              "name": "qwMiss Lim Sharing",
-              "description": "qePremium homestay services across Malaysia offering comfortable, convenient, and thoughtfully designed stays for every traveler.",
-              "image": "https://misslimsharing.com/og-image.jpg",
-              "url": "https://misslimsharing.com",
+              "name": "Miss Lim Sharing",
+              "description": "Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience.",
+              "image": "https://misslimsharing.com/og-image.png",
+              "url": "https://www.misslimsharing.com",
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Malaysia"
               },
               "amenityFeature": [
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Free WiFi"
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Self Check-in"
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Modern Amenities"
-                }
+                { "@type": "LocationFeatureSpecification", "name": "Free WiFi" },
+                { "@type": "LocationFeatureSpecification", "name": "Self Check-in" },
+                { "@type": "LocationFeatureSpecification", "name": "Modern Amenities" }
               ]
             })
           }}
@@ -59,4 +48,3 @@ export default function Document() {
     </Html>
   );
 }
-
