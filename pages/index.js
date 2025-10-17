@@ -5,50 +5,52 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* ✅ Favicon setup */}
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        {/* ✅ Primary SEO Tags */}
+        {/* Page-specific SEO */}
         <title>Miss Lim Sharing | Lovely Airbnb Stays in Malaysia</title>
         <meta
           name="description"
           content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience."
         />
 
-        {/* ✅ Open Graph / Social Media Preview */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Miss Lim Sharing" />
+        {/* Open Graph – homepage */}
         <meta property="og:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
         <meta property="og:description" content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience." />
-        <meta property="og:url" content="https://misslimsharing.com" />
+        <meta property="og:url" content="https://www.misslimsharing.com" />
         <meta property="og:image" content="https://misslimsharing.com/og-image.png" />
 
-        {/* ✅ JSON-LD Structured Data */}
+        {/* Twitter card – homepage */}
+        <meta name="twitter:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
+        <meta name="twitter:description" content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience." />
+        <meta name="twitter:image" content="https://misslimsharing.com/og-image.png" />
+
+        {/* Homepage JSON-LD (WebSite schema) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Miss Lim Sharing",
-              url: "https://misslimsharing.com",
-              description:
-                "Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience.",
-              image: "https://misslimsharing.com/og-image.png",
-              sameAs: [
+              "name": "Miss Lim Sharing",
+              "url": "https://www.misslimsharing.com",
+              "description": "Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience.",
+              "image": "https://misslimsharing.com/og-image.png",
+              "sameAs": [
                 "https://www.facebook.com/misslimsharing",
                 "https://www.instagram.com/misslimsharing"
               ]
-            }),
+            })
           }}
         />
       </Head>
 
-      {/* ✅ Page Content */}
+      {/* Page Content */}
       <div>
         <section className="hero">
           <Slideshow intervalMs={3000} />
@@ -57,9 +59,7 @@ export default function Home() {
         <section className="section">
           <div className="container">
             <h1>Welcome to Miss Lim Sharing</h1>
-            <p>
-              Comfortable, modern, and thoughtfully designed stays for every traveler.
-            </p>
+            <p>Comfortable, modern, and thoughtfully designed stays for every traveler.</p>
           </div>
         </section>
 
