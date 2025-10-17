@@ -5,63 +5,84 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* This is what Google uses */}
-        <title>vb1Miss Lim Sharing: Find Your Lovely Airbnb</title>
+        {/* ✅ Favicon setup */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* ✅ Primary SEO Tags */}
+        <title>Miss Lim Sharing | Lovely Airbnb Stays in Malaysia</title>
         <meta
           name="description"
-          content="vb1Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia."
+          content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience."
         />
-        <link rel="icon" href="/og-image.jpg" type="image/jpeg"></link>
 
-        {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Miss Lim Sharing",
-            "url": "https://misslimsharing.com",
-            "description": "vb2Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia.",
-            "image": "https://misslimsharing.com/og-image.jpg"
-          })}
-        </script>
-
-        {/* Optional: Add a title for brand + region */}
-        <meta property="og:site_name" content="MissLimSharing Malaysia" />
-        <meta property="og:title" content="vb3Miss Lim Sharing: Find Your Lovely Airbnb" />
-        <meta property="og:description" content="vb3Comfortable, convenient, and thoughtfully designed stays for every traveler in Malaysia." />
+        {/* ✅ Open Graph / Social Media Preview */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Miss Lim Sharing" />
+        <meta property="og:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
+        <meta property="og:description" content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience." />
         <meta property="og:url" content="https://misslimsharing.com" />
-        <meta property="og:image" content="https://misslimsharing.com/og-image.jpg" />
+        <meta property="og:image" content="https://misslimsharing.com/og-image.png" />
+
+        {/* ✅ JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Miss Lim Sharing",
+              url: "https://misslimsharing.com",
+              description:
+                "Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience.",
+              image: "https://misslimsharing.com/og-image.png",
+              sameAs: [
+                "https://www.facebook.com/misslimsharing",
+                "https://www.instagram.com/misslimsharing"
+              ]
+            }),
+          }}
+        />
       </Head>
+
+      {/* ✅ Page Content */}
       <div>
-      <section className="hero">
-        <Slideshow intervalMs={3000}/>
-      </section>
-      <section className="section">
-        <div className="container">
-          <h1>Welcome to Our Homestay</h1>
-          <p>Comfortable, convenient, and thoughtfully designed stays for every traveler.</p>
-        </div>
-      </section>
-      <section className="section features">
-        <div className="container">
-          <h2>Why Stay With Us</h2>
-          <div className="cards">
-            <div className="card">
-              <h3>Great Locations</h3>
-              <p>Minutes from transport, business hubs, and attractions.</p>
-            </div>
-            <div className="card">
-              <h3>Modern Comfort</h3>
-              <p>Bright interiors, fast Wi‑Fi, and self check‑in for a seamless stay.</p>
-            </div>
-            <div className="card">
-              <h3>Best Value</h3>
-              <p>Competitive rates, seasonal deals, and discounts for long stays.</p>
+        <section className="hero">
+          <Slideshow intervalMs={3000} />
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <h1>Welcome to Miss Lim Sharing</h1>
+            <p>
+              Comfortable, modern, and thoughtfully designed stays for every traveler.
+            </p>
+          </div>
+        </section>
+
+        <section className="section features">
+          <div className="container">
+            <h2>Why Stay With Us</h2>
+            <div className="cards">
+              <div className="card">
+                <h3>Great Locations</h3>
+                <p>Minutes from transport, business hubs, and attractions.</p>
+              </div>
+              <div className="card">
+                <h3>Modern Comfort</h3>
+                <p>Bright interiors, fast Wi-Fi, and self check-in for a seamless stay.</p>
+              </div>
+              <div className="card">
+                <h3>Best Value</h3>
+                <p>Competitive rates, seasonal deals, and discounts for long stays.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </>
   );
 }
