@@ -6,7 +6,12 @@ export default function Home() {
     <>
       <Head>
         {/* Favicon */}
-        <link rel="icon" href="./downloads/profile/xiaohu.jpeg" type="image/jpeg"/>
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" /> */}
+        <link rel="icon" href="/xiaohu.jpeg" type="image/jpeg" />
 
         {/* Page-specific SEO */}
         <title>Miss Lim Sharing | Lovely Airbnb Stays in Malaysia</title>
