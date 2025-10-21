@@ -6,32 +6,28 @@ export default function Home() {
     <>
       <Head>
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="./downloads/profile/xiaohu.jpeg" type="image/jpeg"/>
 
         {/* Page-specific SEO */}
         <title>Miss Lim Sharing | Lovely Airbnb Stays in Malaysia</title>
         <meta
           name="description"
-          content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience."
+          content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors for a seamless experience."
         />
 
         {/* Open Graph – homepage */}
-        <meta property="og:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
+        {/* <meta property="og:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
         <meta property="og:description" content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience." />
         <meta property="og:url" content="https://www.misslimsharing.com" />
-        <meta property="og:image" content="https://misslimsharing.com/og-image.png" />
+        <meta property="og:image" content="https://misslimsharing.com/og-image.png" /> */}
 
         {/* Twitter card – homepage */}
-        <meta name="twitter:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
+        {/* <meta name="twitter:title" content="Miss Lim Sharing | Lovely Airbnb Stays in Malaysia" />
         <meta name="twitter:description" content="Comfortable, modern, and thoughtfully designed Airbnb stays across Malaysia. Enjoy bright interiors, fast Wi-Fi, and self check-in for a seamless experience." />
-        <meta name="twitter:image" content="https://misslimsharing.com/og-image.png" />
+        <meta name="twitter:image" content="https://misslimsharing.com/og-image.png" /> */}
 
         {/* Homepage JSON-LD (WebSite schema) */}
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -47,7 +43,7 @@ export default function Home() {
               ]
             })
           }}
-        />
+        /> */}
       </Head>
 
       {/* Page Content */}
@@ -86,3 +82,4 @@ export default function Home() {
     </>
   );
 }
+
